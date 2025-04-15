@@ -1,0 +1,263 @@
+body{
+    margin: auto;
+    background-color:#F2F0EA;
+    font-family:Arial,Verdana,Helvetica;
+    max-width:1100px;
+}
+
+header{
+    width:100%;
+    background-color:#A8D5E3;
+    color:#222222;
+    text-align: center;
+    h1{
+        margin-top:0px;
+        padding-top: 2%;
+        font-size:xx-large;
+    }
+    .subheading{
+        font-size:medium;
+        h4{
+            margin:0px;
+        }
+    }
+
+/*#f5f0bf #fffe0f #f5d443 #9e720d #b9940a #f0dfb5 #e9ce04 #baa503 #e9b704 #d5b805 #222222
+
+#FF78AC-Pink #A8D5E3-Teal #F2F0EA-Cream
+Tried to make my own colour palette, just looked one up instead it's not that important
+*/
+ 
+}
+
+nav{
+    width:100%;
+    background-color:#A8D5E3;
+    ul{
+        /*I'm trying to make the background colour extend to both sides of the border
+        when hovering, I can;t figure it out but the style I got seems ok*/
+        padding-top:10px;
+        margin-top:0px;
+        li{
+            overflow:hidden;
+            display:inline;
+            font-size:18px;
+            
+            
+            /*why are the a.nav tags different colours?*/
+            a.nav:link, a.nav:visited{
+                border-right:#222222 solid 1px;
+                text-decoration:none;
+                color:#000000;
+                background-color:#A8D5E3;
+                padding:0px 15px 0px 15px;
+                border-radius:3px;
+            }
+            a.nav:hover{
+                border-right:#222222 solid 1px;
+                background-color:#FFFFFFd7;
+                color:#000000;
+            }
+            a.nav:active{
+                
+                background-color:#A8D5E3;
+                color:#000000;
+            }
+        }
+    }
+}
+.column{
+    margin:1%;
+    float:right;
+    width:16%;
+    padding:1%;
+}
+.suit{
+    border:gold solid 3px;
+}
+
+.apps{
+    width:180px;
+    height:100px;
+    overflow:auto;
+}
+table, th, td{
+    
+    border:#0000ff4b solid 2px;
+    border-collapse:collapse;
+    
+}
+th{
+    background-color:#808080;
+    color:hwb(0 100% 0%);
+}
+tr:nth-child(odd){
+    background-color:lightgrey;
+}
+tr:nth-child(even){
+    background-color:lightblue;
+}
+tr:hover{
+    background-color:#FF78AC;
+}
+
+main{
+    width:80%
+}
+/*just trying to unstick all the text and stuff from the 
+side of the page*/
+.intro{
+    width:75%;
+    padding:1%;
+    margin:1%;
+    border-radius:1%;
+    background-color:#FF78AC;
+    h2{
+        text-decoration:underline;
+        text-transform:uppercase;
+    }
+}
+.jargon{
+    padding:1%;
+    
+}
+
+/*trying to get the image to line up beside the text for
+eash section individually*/
+.member{
+    
+   height:fit-content;
+    margin:0px;
+    margin-bottom:2%;
+    padding:0px;
+    clear:both;
+    border:black solid 1px;
+    display:inline-block;
+    
+    .image-container{
+        margin:0px;
+        padding:0px;
+        float:left;
+        /*
+        border:black solid 1px;
+        */  
+        margin:1%;
+        width:100px;
+        height:128px;
+        
+        
+    }
+    h3{
+        margin:0px;
+        text-align:center;
+    }
+    p{
+        padding:0px;
+        /*
+        border:black solid 1px;
+        */
+        height:fit-content;
+        width:auto;
+        margin:0px;
+    }
+
+}
+.location{
+    height:fit-content;
+    margin:0px;
+    margin-bottom:2%;
+    padding:0px;
+    clear:both;
+    border:black solid 1px;
+    display:inline-block;
+   
+    .image-container{
+        margin:0px;
+        padding:0px;
+        float:right;
+        /*
+        border:black solid 1px;
+        */  
+        margin:1%;
+        width:100px;
+        height:128px;
+        
+        
+    }
+    h3{
+        margin:0px;
+        text-align:center;
+    }
+    p{
+        padding:0px;
+        /*
+        border:black solid 1px;
+        */
+        height:fit-content;
+        width:auto;
+        margin:0px;
+    }
+}
+.positions{
+    height:fit-content;
+    margin:0px;
+    margin-bottom:2%;
+    padding:0px;
+    clear:both;
+    border:black solid 1px;
+    display:inline-block;
+   
+    .image-container{
+        margin:0px;
+        padding:0px;
+        float:left;
+        /*
+        border:black solid 1px;
+        */  
+        margin:1%;
+        width:10%;
+        height:128px;
+        
+        
+    }
+    h3{
+        margin:0px;
+        text-align:center;
+    }
+    p{
+        
+        padding:0px;
+        /*
+        border:black solid 1px;
+        */
+        height:fit-content;
+        width:100%;
+        margin:0px;
+        
+    }
+}
+footer{
+    text-decoration-line: underline;
+    text-align: end;
+    clear:both;
+}
+/*footer { grid-row: 3 / 4; grid-column: 2 / 3; }
+*/
+/*@media query is important,
+add HTML forms for complexity,
+add table on index.html and use overflow to make it scollable.
+*/
+
+/*I think I'm gonna have the big screen anything over 1110px
+*/
+/*Really need to figure out how to use @media and to layouts of my websites, maybe
+try flexbox/grid instead of float*/
+/*for the moment gonna try and implement a bit of javascript into the website*/
+@media (max-width: 1110px){
+    body{ background-color:pink;}
+    
+}
+@media (min-width: 800px) {
+    footer { grid-row: 3 / 4; grid-column: 2 / 3;
+    }
+}
